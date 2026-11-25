@@ -2,7 +2,7 @@
 // Scope is this app's own folder (/s612-transfer/), so it never touches the other OPT apps on the same site.
 // The page opens from the saved copy straight away and the latest build is fetched in the background, so a new
 // release shows on the launch after it is published. Cache names start with "s612-" and only those are ever deleted.
-const VERSION = '146';            // stamped by build.mjs from package.json
+const VERSION = '147';            // stamped by build.mjs from package.json
 const CACHE = 's612-b' + VERSION, FONTS = 's612-fonts';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png',
               './icons/icon-maskable-512.png', './icons/apple-touch-icon.png', './icons/icon.svg'];
