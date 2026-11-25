@@ -160,7 +160,6 @@ footer.credit svg { width:18px; height:18px; flex:none; transform:translateY(-1p
 
 .log .detail { display:none; color:var(--quiet); } .log.showDetail .detail { display:block; }
 .logdet { float:right; font-size:11px; letter-spacing:0; text-transform:none; color:var(--quiet); display:inline-flex; gap:5px; align-items:center; cursor:pointer; } .logdet input { margin:0; }
-.keys.edits { column-gap:6px; } .keys.edits button { padding-left:8px; padding-right:8px; } .keys.edits select { padding-left:8px; padding-right:26px; background-position:right 9px center; } /* one row at the default window width */
 
 </style>
 </head>
@@ -235,10 +234,10 @@ footer.credit svg { width:18px; height:18px; flex:none; transform:translateY(-1p
   </section>
 <section class="panel group"><div class="cap"><span>Edit</span></div>
       <div class="row"><span id="selInfo" class="read"></span></div>
-      <div class="keys edits">
+      <div class="keys">
         <button id="editTrim" class="teal" disabled title="Keep only the selected part of the sound">Trim</button>
         <button id="editCut" class="teal" disabled title="Delete the selected part and close the gap">Cut</button>
-        <button id="editCrop" class="teal" disabled title="Throw away everything before the start marker and after the end marker">Crop to start/end</button>
+        <button id="editCrop" class="teal" disabled title="Throw away everything before the start marker and after the end marker">Crop</button>
         <button id="editSilence" class="teal" disabled title="Replace the selection (or the whole sound) with silence">Silence</button>
         <label for="fadeCurveIn">Fade in</label><select id="fadeCurveIn" title="Shape of the fade in, set with the round knob at the left of the waveform (drag it inward). Linear: even. Fast curve: it rises quickly then eases. Slow curve: it holds, then comes in late"><option value="linear">linear</option><option value="fast">fast</option><option value="slow">slow</option></select>
         <label for="fadeCurveOut">Fade out</label><select id="fadeCurveOut" title="Shape of the fade out, set with the round knob at the right of the waveform (drag it inward). Linear: even. Fast curve: it drops quickly then eases, like a natural decay. Slow curve: it holds, then goes late"><option value="linear">linear</option><option value="fast">fast</option><option value="slow">slow</option></select>
@@ -307,7 +306,7 @@ footer.credit svg { width:18px; height:18px; flex:none; transform:translateY(-1p
   </div>
   </div>
 </main>
-<footer class="credit"><div class="frow"><p class="disc">Unofficial tool, not affiliated with or endorsed by Akai Professional. Akai is a trade mark of inMusic Brands. Works in Chrome and Edge, which support Web MIDI.</p><p class="line"><a class="kofi" href="https://ko-fi.com/optfx">Support OPT-FX on Ko-fi</a><span class="sep">·</span><span>Made by OPT</span><span class="ver" title="Build 145">v0.2</span><svg viewBox="0 0 400 400" role="img" aria-label="OPT logo: a striped sun"><defs><mask id="sunmask2"><rect width="400" height="400" fill="#fff"/><rect y="224" width="400" height="8"/><rect y="262" width="400" height="13"/><rect y="302" width="400" height="18"/><rect y="344" width="400" height="24"/></mask></defs><circle cx="200" cy="200" r="196" fill="#FF8A1F" mask="url(#sunmask2)"/></svg></p></div></footer>
+<footer class="credit"><div class="frow"><p class="disc">Unofficial tool, not affiliated with or endorsed by Akai Professional. Akai is a trade mark of inMusic Brands. Works in Chrome and Edge, which support Web MIDI.</p><p class="line"><a class="kofi" href="https://ko-fi.com/optfx">Support OPT-FX on Ko-fi</a><span class="sep">·</span><span>Made by OPT</span><span class="ver" title="Build 146">v0.2</span><svg viewBox="0 0 400 400" role="img" aria-label="OPT logo: a striped sun"><defs><mask id="sunmask2"><rect width="400" height="400" fill="#fff"/><rect y="224" width="400" height="8"/><rect y="262" width="400" height="13"/><rect y="302" width="400" height="18"/><rect y="344" width="400" height="24"/></mask></defs><circle cx="200" cy="200" r="196" fill="#FF8A1F" mask="url(#sunmask2)"/></svg></p></div></footer>
 <script>
 // ---------- App: offline use, install offer, window size, update note ----------
 try {
