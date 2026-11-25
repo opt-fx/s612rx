@@ -1,0 +1,17 @@
+{
+  "id": "/s612-transfer/",
+  "name": "S612 transfer",
+  "short_name": "S612",
+  "description": "Sample transfer for the Akai S612 over MIDI, with waveform editing and Quick Disk images. Unofficial community tool by OPT.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "related_applications": [{ "platform": "webapp", "url": "https://opt-fx.com/s612-transfer/manifest.webmanifest" }],
+  "background_color": "#0c0c0d",
+  "theme_color": "#0c0c0d",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
