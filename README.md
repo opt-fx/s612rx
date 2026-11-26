@@ -1,8 +1,10 @@
-# S612 transfer
+# S612rx
+
+*Formerly S612 transfer.*
 
 A browser tool for the Akai S612 sampler. It sends a sound to the sampler, reads one back, edits it, records through the sampler's own converters and keeps a library of sounds as disk images. It runs in Chrome or Edge with no install, talks to the sampler over MIDI, and the whole app is one HTML file. Made by OPT.
 
-**Use it now: https://opt-fx.com/s612-transfer/**
+**Use it now: https://opt-fx.com/s612rx/**
 
 **Status: release candidate.** It has been tested on one real S612. Nothing is uploaded anywhere: sounds and library folders stay on your computer.
 
@@ -15,7 +17,7 @@ A browser tool for the Akai S612 sampler. It sends a sound to the sampler, reads
 
 ## Install it as an app
 
-S612 transfer can be installed so it opens from the Dock or Start menu in its own window and works without a connection. In Chrome or Edge, click **Install app** at the top of the page, or the install icon at the right of the address bar. It opens instantly from the copy on your computer and checks for an update in the background, so a new version appears the next time you open it, with a line in the log. To send someone straight to the install offer, link to [opt-fx.com/s612-transfer/#install](https://opt-fx.com/s612-transfer/#install).
+S612rx can be installed so it opens from the Dock or Start menu in its own window and works without a connection. In Chrome or Edge, click **Install app** at the top of the page, or the install icon at the right of the address bar. It opens instantly from the copy on your computer and checks for an update in the background, so a new version appears the next time you open it, with a line in the log. To send someone straight to the install offer, link to [opt-fx.com/s612-transfer/#install](https://opt-fx.com/s612rx/#install).
 
 ## Setup
 

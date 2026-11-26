@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>S612 transfer</title>
+<title>S612rx</title>
 <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
 <link rel="manifest" href="manifest.webmanifest">
 <script>/* catch Chrome's install offer as early as possible: it can arrive before the rest of the page has loaded */ try { addEventListener('beforeinstallprompt', e => { e.preventDefault(); window.earlyInstall = e; }); } catch (e) {}</script>
 <meta name="theme-color" content="#0c0c0d">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<meta name="apple-mobile-web-app-title" content="S612 transfer">
+<meta name="apple-mobile-web-app-title" content="S612rx">
 <style>
 :root { --bg:#0c0c0d; --panel:#161617; --edge:#2e2f32; --gold:#c9a45c; --accent:#d8cca6; --ink:#e9e6dd; --quiet:#9c9a92; --field:#101012; --btn:#232427;
   --good:#6cc070; --bad:#ef6a5e; --onaccent:#1a1710; color-scheme:dark; }
@@ -17,7 +17,7 @@
 body { margin:0 auto; max-width:1440px; min-height:100vh; background:var(--bg); color:var(--ink); font:14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif; }
 main { padding:16px 20px 28px; }
 header { display:flex; align-items:baseline; gap:14px; padding-bottom:12px; margin-bottom:14px; border-bottom:1px solid var(--edge); }
-h1 { margin:0 0 0 17px; font-size:24px; font-weight:800; letter-spacing:.02em; color:var(--gold); } h1 span { font-weight:400; }
+h1 { margin:0 0 0 17px; font-size:24px; font-weight:800; letter-spacing:.02em; color:var(--gold); } h1 span { font-weight:800; }
 .sub { color:var(--quiet); font-size:12px; }
 .panel, .display, .logbox { background:var(--panel); border:1px solid var(--edge); border-radius:8px; padding:14px 16px; margin-bottom:14px; }
 .cap { display:block; margin:0 0 10px; padding-bottom:5px; border-bottom:1px solid var(--edge); color:var(--gold); font-size:12.5px; letter-spacing:.08em; text-transform:uppercase; }
@@ -173,8 +173,8 @@ a.homelogo { display:inline-flex; line-height:0; } a.homelogo:hover { opacity:.8
 </head>
 <body>
 <main>
-  <div class="installbar" id="installBar"><div class="msg"><b>S612 transfer works as an app on your computer.</b> <span id="installHint">Its own window and Dock icon, and it opens without a connection.</span></div><button class="go" id="installBarBtn" type="button">Install app</button><button id="installBarNo" type="button">Not now</button></div>
-  <header><h1>S612 <span>transfer</span></h1><button id="installBtn" type="button" title="Install S612 transfer as an app: its own window and Dock icon, and it works offline">Install app</button></header>
+  <div class="installbar" id="installBar"><div class="msg"><b>S612rx works as an app on your computer.</b> <span id="installHint">Its own window and Dock icon, and it opens without a connection.</span></div><button class="go" id="installBarBtn" type="button">Install app</button><button id="installBarNo" type="button">Not now</button></div>
+  <header><h1>S612<span>rx</span></h1><button id="installBtn" type="button" title="Install S612rx as an app: its own window and Dock icon, and it works offline">Install app</button></header>
   <div class="layout">
   <aside class="side">
 <section class="panel group"><div class="cap"><span>MIDI</span></div>
@@ -356,7 +356,7 @@ try {
   };
   addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); offer(e); });
   if (window.earlyInstall) offer(window.earlyInstall);
-  addEventListener('appinstalled', () => { hideAll(); say('Installed: S612 transfer now opens in its own window.'); });
+  addEventListener('appinstalled', () => { hideAll(); say('Installed: S612rx now opens in its own window.'); });
   if (!standalone && safari) {
     btn.classList.add('show');
     if (wanted) { hint.textContent = safariHint; barBtn.style.display = 'none'; bar.classList.add('show'); }
@@ -368,7 +368,7 @@ try {
     if (deferred) return;
     hint.textContent = firefox
       ? 'Firefox can’t install apps, or use Web MIDI. Open this page in Chrome or Edge.'
-      : installed ? 'It’s already installed on this computer: open S612 transfer from your Dock, Launchpad or Start menu.'
+      : installed ? 'It’s already installed on this computer: open S612rx from your Dock, Launchpad or Start menu.'
       : 'If it’s already installed, open it from your Dock or Launchpad. Otherwise use the install icon at the right of the address bar.';
     barBtn.style.display = 'none';
     bar.classList.add('show');
@@ -3414,7 +3414,7 @@ window.__zoom = () => ({ ...zoom });
 // "A new version is ready" bar. The installed app opens instantly from its saved copy; a few seconds later this checks
 // the site for a newer build. If there is one it saves it (so Reload shows it at once) and offers Reload or Later.
 (function () {
-  const NAME = 'S612 transfer', PREFIX = 's612-', ACCENT = '#e3b04b', INK = '#1a1408';
+  const NAME = 'S612rx', PREFIX = 's612-', ACCENT = '#e3b04b', INK = '#1a1408';
   const ver = document.querySelector('.ver');
   const current = ver ? +((ver.title || '').replace(/\D/g, '')) : 0;
   let shown = false, last = 0;

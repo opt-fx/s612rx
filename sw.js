@@ -1,5 +1,5 @@
-// S612 transfer service worker: lets the installed app open and work offline.
-// Scope is this app's own folder (/s612-transfer/), so it never touches the other OPT apps on the same site.
+// S612rx service worker: lets the installed app open and work offline.
+// Scope is this app's own folder (/s612rx/), so it never touches the other OPT apps on the same site.
 // The page opens from the saved copy straight away and the latest build is fetched in the background, so a new
 // release shows on the launch after it is published. Cache names start with "s612-" and only those are ever deleted.
 const VERSION = '152';            // stamped by build.mjs from package.json
